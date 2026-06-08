@@ -1,0 +1,17 @@
+{
+  "_comment": "Renomeie este arquivo para google-services.json após baixar do Firebase Console.",
+  "project_info": {
+    "project_number": "SEU_PROJECT_NUMBER",
+    "project_id": "SEU_PROJECT_ID"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:SEU_PROJECT_NUMBER:android:SEU_APP_ID",
+        "android_client_info": {
+          "package_name": "com.example.aplicativo_firebaseremoteconfig"
+        }
+      }
+    }
+  ]
+}
