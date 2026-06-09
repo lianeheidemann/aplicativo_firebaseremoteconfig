@@ -25,12 +25,12 @@ This project showcases how to use **Firebase Remote Config** to dynamically cont
 Watch the app in action with Firebase Remote Config:
 
 ### Atualizando a Cor de Fundo
-<p align="center">
+<p align="left">
   <img src="https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig/raw/main/assets/images/gif1_cor_FirebaseRemoteConfig.gif" width="400" alt="GIF mostrando atualização de cor">
 </p>
 
 ### Alterando a Propaganda
-<p align="center">
+<p align="left">
   <img src="https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig/raw/main/assets/images/gif2_propaganda_FirebaseRemoteConfig.gif" width="400" alt="GIF mostrando alteração de propaganda">
 </p>
 
@@ -175,14 +175,6 @@ await remoteConfig.fetchAndActivate();
 - 🌐 Localized content management
 - 📊 Real-time analytics-driven UI changes
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
 ## 📚 Resources
 
 - [Firebase Remote Config Documentation](https://firebase.google.com/docs/remote-config)
@@ -191,6 +183,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Created to demonstrate a simple and functional Remote Config flow controlling app visual parameters.**
-
-Made with ❤️ by [@lianeheidemann](https://github.com/lianeheidemann)
+[@lianeheidemann](https://github.com/lianeheidemann)
