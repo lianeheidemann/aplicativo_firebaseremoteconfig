@@ -8,7 +8,7 @@ A Flutter example app demonstrating **Firebase Remote Config** integration for d
 
 ## 📋 Overview
 
-This project showcases how to use **Firebase Remote Config** to dynamically control app UI without deploying new versions. Update colors, images, and other configurations in real-time via Firebase Console.
+This project showcases how to use **Firebase Remote Config** to dynamically control app UI without deploying new versions. Update colors, images, and other configurations in real-time via Firebase.
 
 ## ✨ Key Features
 
@@ -19,6 +19,12 @@ This project showcases how to use **Firebase Remote Config** to dynamically cont
   - **Promotional image** (Remote Config key: `propaganda`)
 - ✅ Manual refresh button to update configurations
 - ✅ External link launcher for promotional URLs
+
+## 🎥 Demo
+
+Watch the app in action with Firebase Remote Config:
+
+https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig/assets/images/video_FirebaseRemoteConfig.mp4
 
 ## 🛠️ Technologies Used
 
@@ -120,7 +126,8 @@ propaganda: default
 ├── assets/
 │   └── images/
 │       ├── propaganda.png           # Default promotional image
-│       └── propaganda_alt.png       # Alternative promotional image
+│       ├── propaganda_alt.png       # Alternative promotional image
+│       └── video_FirebaseRemoteConfig.mp4  # Demo video
 ├── firebase.json                    # Firebase project config
 └── pubspec.yaml                     # Flutter dependencies
 ```
