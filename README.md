@@ -1,169 +1,159 @@
-# 🔥 Firebase Remote Config Flutter App
+# Firebase Remote Config Flutter Application
 
 <div align="center">
 
-A Flutter example app demonstrating **Firebase Remote Config** integration for dynamic UI control and real-time configuration management without app redeployment.
+A production-ready Flutter application demonstrating Firebase Remote Config integration for dynamic UI control and real-time configuration management without app redeployment.
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue?style=for-the-badge&logo=flutter)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Latest-orange?style=for-the-badge&logo=firebase)](https://firebase.google.com)
 [![Dart](https://img.shields.io/badge/Dart-3.0+-1f425f?style=for-the-badge&logo=dart)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Configuration](#-configuration)
+[Features](#features) • [Installation](#installation) • [Configuration](#configuration) • [Resources](#resources)
 
 </div>
 
 ---
 
-## 📖 Overview
+## Overview
 
-This project demonstrates a production-ready implementation of **Firebase Remote Config** in Flutter, enabling dynamic control of app UI elements without requiring new app releases. Update colors, images, and configurations in real-time directly from Firebase Console.
+This project provides a production-ready implementation of Firebase Remote Config in Flutter, enabling dynamic control of application UI elements without requiring new app releases. Configuration updates are deployed in real-time through Firebase Console.
 
-**Perfect for:**
+**Primary Applications:**
 - A/B testing UI variations
 - Feature flag management
-- Real-time promotional content updates
+- Real-time promotional content deployment
 - Dynamic theming and branding
 
 ---
 
-## ✨ Key Features
+## Features
 
-<table>
-<tr>
-<td width="50%">
-
-- ✅ Firebase initialization with `firebase_core`
-- ✅ Automatic fetch and activation of Remote Config
-- ✅ Real-time dynamic UI updates
-- ✅ Manual refresh functionality
-
-</td>
-<td width="50%">
-
-- ✅ Background color customization
-- ✅ Dynamic promotional images
-- ✅ Graceful fallback to defaults
-- ✅ Production-ready error handling
-
-</td>
-</tr>
-</table>
+| Category | Capabilities |
+|----------|--------------|
+| **Core Functionality** | Firebase initialization with `firebase_core` |
+| | Automatic fetch and activation of Remote Config |
+| | Real-time dynamic UI updates |
+| | Manual refresh functionality |
+| **UI Components** | Background color customization |
+| | Dynamic promotional images |
+| | Graceful fallback to default values |
+| | Production-ready error handling |
 
 ---
 
-## 🎬 Demo
+## Demo
 
 <div align="center">
 
-### Background Color Update
+**Background Color Update**
+
 ![Color Update Demo](https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig/raw/main/assets/gifs/gif1_cor_FirebaseRemoteConfig.gif)
 
-### Promotional Content Change
+**Promotional Content Management**
+
 ![Promotional Update Demo](https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig/raw/main/assets/gifs/gif2_propaganda_FirebaseRemoteConfig.gif)
 
 </div>
 
 ---
 
-## 🛠️ Tech Stack
+## Technology Stack
 
 | Component | Purpose | Version |
 |-----------|---------|---------|
-| **Flutter** | Cross-platform UI framework | 3.0+ |
-| **firebase_core** | Firebase initialization & setup | Latest |
-| **firebase_remote_config** | Remote configuration management | Latest |
-| **url_launcher** | External URL navigation | Latest |
-| **Dart** | Programming language | 3.0+ |
+| Flutter | Cross-platform UI framework | 3.0+ |
+| firebase_core | Firebase initialization | Latest |
+| firebase_remote_config | Configuration management | Latest |
+| url_launcher | URL navigation | Latest |
+| Dart | Programming language | 3.0+ |
 
 ---
 
-## 🚀 Quick Start
+## Installation
 
-### Prerequisites
+### System Requirements
 
-- **Flutter SDK** 3.0 or higher
-- **Firebase CLI** (recommended)
-- **Android SDK** or **iOS SDK**
-- Firebase project created
+- Flutter SDK 3.0 or higher
+- Firebase CLI
+- Android SDK or iOS SDK
+- Active Firebase project
 
-### Installation Steps
+### Setup Instructions
 
-#### 1. Clone the Repository
+#### 1. Repository Setup
 ```bash
 git clone https://github.com/lianeheidemann/aplicativo_firebaseremoteconfig.git
 cd aplicativo_firebaseremoteconfig
 ```
 
-#### 2. Install Dependencies
+#### 2. Dependency Installation
 ```bash
 flutter pub get
 ```
 
-#### 3. Configure Firebase
+#### 3. Firebase Configuration
 
 **Using FlutterFire CLI (Recommended):**
 ```bash
-# Install FlutterFire CLI if not already installed
 dart pub global activate flutterfire_cli
-
-# Configure Firebase for your project
 flutterfire configure
 ```
 
-**Manual Setup:**
+**Manual Configuration:**
 1. Download `google-services.json` from Firebase Console
-2. Place it in `android/app/`
-3. Ensure `android/build.gradle` includes Firebase plugins
+2. Place in `android/app/`
+3. Verify Firebase plugins in `android/build.gradle`
 
-#### 4. Run the Application
+#### 4. Application Launch
 ```bash
 flutter run
 ```
 
 ---
 
-## ⚙️ Configuration Guide
+## Configuration
 
-### Remote Config Keys
+### Remote Configuration Parameters
 
-#### `cor_fundo` (Background Color)
-| Property | Value |
-|----------|-------|
-| **Type** | String (Hex color) |
-| **Format** | `#RRGGBB` |
-| **Default** | `#FFFFFF` (White) |
-| **Effect** | Controls Scaffold background color |
-| **Example** | `#FF5733`, `#3498DB`, `#2ECC71` |
+#### Background Color (`cor_fundo`)
 
-#### `propaganda` (Promotional Image)
-| Property | Value |
-|----------|-------|
-| **Type** | String |
-| **Default** | `default` |
-| **Options** | `alternativa` or any other value |
-| **Behavior** | `alternativa` → uses `propaganda_alt.png`<br>`default` → uses `propaganda.png` |
+| Attribute | Specification |
+|-----------|---------------|
+| Type | String (Hexadecimal) |
+| Format | `#RRGGBB` |
+| Default Value | `#FFFFFF` |
+| Application | Scaffold background color |
+| Examples | `#FF5733`, `#3498DB`, `#2ECC71` |
 
-### Firebase Console Setup
+#### Promotional Image (`propaganda`)
 
-1. Navigate to **Firebase Console** → Your Project → **Remote Config**
-2. Click **Create Configuration**
-3. Add the following parameters:
+| Attribute | Specification |
+|-----------|---------------|
+| Type | String |
+| Default Value | `default` |
+| Valid Values | `alternativa` or custom |
+| Behavior | `alternativa` → `propaganda_alt.png` |
+| | Default → `propaganda.png` |
 
-```
-Parameter          | Value              | Type
--------------------|-------------------|-------
-cor_fundo         | #FF0000           | String
-propaganda        | alternativa       | String
-```
+### Firebase Console Configuration
+
+1. Navigate to Firebase Console → Remote Config
+2. Select **Create Configuration**
+3. Add parameters:
+
+| Parameter | Value | Type |
+|-----------|-------|------|
+| cor_fundo | #FF0000 | String |
+| propaganda | alternativa | String |
 
 4. Click **Publish Configuration**
-5. Wait for global propagation (typically 5-10 seconds)
-6. Open the app and tap **Refresh** to fetch updates
+5. Allow 5-10 seconds for propagation
+6. Open application and select **Refresh** button
 
-### Example Configurations
+### Configuration Examples
 
-**Red Theme with Alternative Image:**
+**Configuration A - Red Theme:**
 ```json
 {
   "cor_fundo": "#FF0000",
@@ -171,7 +161,7 @@ propaganda        | alternativa       | String
 }
 ```
 
-**Blue Theme with Default Image:**
+**Configuration B - Blue Theme:**
 ```json
 {
   "cor_fundo": "#0000FF",
@@ -179,7 +169,7 @@ propaganda        | alternativa       | String
 }
 ```
 
-**Green Theme:**
+**Configuration C - Green Theme:**
 ```json
 {
   "cor_fundo": "#2ECC71",
@@ -189,71 +179,70 @@ propaganda        | alternativa       | String
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 aplicativo_firebaseremoteconfig/
 ├── lib/
-│   ├── main.dart                    # Application entry point & Remote Config logic
-│   └── firebase_options.dart        # Firebase initialization configuration
+│   ├── main.dart                    # Application entry point
+│   └── firebase_options.dart        # Firebase configuration
 ├── android/
 │   ├── app/
-│   │   └── google-services.json     # Firebase Android credentials
-│   └── build.gradle                 # Android build configuration
+│   │   └── google-services.json     # Firebase credentials
+│   └── build.gradle                 # Build configuration
 ├── assets/
 │   └── images/
-│       ├── propaganda.png           # Default promotional image
-│       ├── propaganda_alt.png       # Alternative promotional image
+│       ├── propaganda.png
+│       ├── propaganda_alt.png
 │       ├── gif1_cor_FirebaseRemoteConfig.gif
 │       └── gif2_propaganda_FirebaseRemoteConfig.gif
-├── pubspec.yaml                     # Flutter project dependencies
-├── firebase.json                    # Firebase project settings
-└── README.md                        # This file
+├── pubspec.yaml                     # Dependencies
+├── firebase.json                    # Firebase settings
+└── README.md                        # Documentation
 ```
 
 ---
 
-## 💻 Implementation Details
+## Implementation
 
-### Core Logic (`lib/main.dart`)
+### Remote Config Initialization
 
-**Remote Config Initialization:**
 ```dart
 final remoteConfig = FirebaseRemoteConfig.instance;
 
-// Set default values
 await remoteConfig.setDefaults({
   'cor_fundo': '#FFFFFF',
   'propaganda': 'default',
 });
 
-// Fetch and activate configuration
 await remoteConfig.fetchAndActivate();
 ```
 
-**Accessing Configuration Values:**
+### Configuration Access
+
 ```dart
 String backgroundColor = remoteConfig.getString('cor_fundo');
 String imageType = remoteConfig.getString('propaganda');
 ```
 
-**Manual Refresh:**
+### Manual Configuration Refresh
+
 ```dart
 void _refreshConfig() async {
   try {
     await remoteConfig.fetchAndActivate();
     setState(() {});
   } catch (e) {
-    print('Error fetching Remote Config: $e');
+    print('Configuration refresh failed: $e');
   }
 }
 ```
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
-All dependencies are managed in `pubspec.yaml`:
+**pubspec.yaml configuration:**
 
 ```yaml
 dependencies:
@@ -264,60 +253,62 @@ dependencies:
   url_launcher: ^latest
 ```
 
-Update dependencies:
+**Update dependencies:**
 ```bash
 flutter pub upgrade
 ```
 
 ---
 
-## 🧪 Testing & Validation
+## Testing and Validation
 
-### Test Locally
-1. Run the app with `flutter run`
+### Local Testing Procedure
+
+1. Execute `flutter run`
 2. Open Firebase Console
-3. Publish a new configuration
-4. Tap the **Refresh** button in the app
-5. Observe UI updates in real-time
+3. Publish new configuration
+4. Select **Refresh** button in application
+5. Verify UI updates
 
-### Best Practices
-- ✅ Test with various hex color values
-- ✅ Test with both propaganda configurations
-- ✅ Test network failures and retries
-- ✅ Monitor Firebase usage in Console
+### Validation Checklist
 
----
-
-## 💡 Use Cases
-
-| Use Case | Example |
-|----------|---------|
-| **A/B Testing** | Test different color schemes with user groups |
-| **Feature Flags** | Enable/disable features without redeployment |
-| **Promotional Content** | Update promotional images and URLs dynamically |
-| **Theming** | Switch between light/dark themes in real-time |
-| **Regional Content** | Serve region-specific content |
-| **Emergency Updates** | Quickly update UI without app store review |
+- Hexadecimal color value testing
+- Propaganda configuration variants
+- Network error handling
+- Firebase usage monitoring
 
 ---
 
-## 🔗 Resources
+## Use Cases
+
+| Application | Description |
+|-------------|-------------|
+| A/B Testing | Color scheme variation testing |
+| Feature Flags | Feature enablement control |
+| Promotional Management | Dynamic promotional content |
+| Theme Management | Real-time theme switching |
+| Regional Customization | Region-specific content |
+| Emergency Updates | Rapid UI updates without store deployment |
+
+---
+
+## Documentation
 
 - [Firebase Remote Config Documentation](https://firebase.google.com/docs/remote-config)
-- [Flutter Firebase Plugins](https://firebase.flutter.dev)
+- [Flutter Firebase Integration](https://firebase.flutter.dev)
 - [Flutter Documentation](https://flutter.dev/docs)
 - [Firebase Console](https://console.firebase.google.com)
-- [FlutterFire CLI Guide](https://firebase.flutter.dev/docs/cli)
+- [FlutterFire CLI](https://firebase.flutter.dev/docs/cli)
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Liane Heidemann**
 
@@ -328,8 +319,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-**Built with ❤️ using Flutter & Firebase**
+Developed using Flutter and Firebase
 
-[⬆ Back to Top](#-firebase-remote-config-flutter-app)
+[Back to Top](#firebase-remote-config-flutter-application)
 
 </div>
