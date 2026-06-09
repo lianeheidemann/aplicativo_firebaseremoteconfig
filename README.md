@@ -7,7 +7,6 @@ A production-ready Flutter application demonstrating Firebase Remote Config inte
 [![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue?style=for-the-badge&logo=flutter)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Latest-orange?style=for-the-badge&logo=firebase)](https://firebase.google.com)
 [![Dart](https://img.shields.io/badge/Dart-3.0+-1f425f?style=for-the-badge&logo=dart)](https://dart.dev)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 [Features](#features) • [Installation](#installation) • [Configuration](#configuration) • [Resources](#resources)
 
@@ -300,12 +299,6 @@ flutter pub upgrade
 - [Flutter Documentation](https://flutter.dev/docs)
 - [Firebase Console](https://console.firebase.google.com)
 - [FlutterFire CLI](https://firebase.flutter.dev/docs/cli)
-
----
-
-## License
-
-MIT License - See [LICENSE](LICENSE) file for details.
 
 ---
 
