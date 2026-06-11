@@ -1,22 +1,12 @@
 # Firebase Remote Config Flutter Application
 
-<div align="center">
-
-A production-ready Flutter application demonstrating Firebase Remote Config integration for 
-dynamic UI control and real-time configuration management without app redeployment.
-
 [![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue?style=for-the-badge&logo=flutter)](https://flutter.dev)
 [![Firebase](https://img.shields.io/badge/Firebase-Latest-orange?style=for-the-badge&logo=firebase)](https://firebase.google.com)
 [![Dart](https://img.shields.io/badge/Dart-3.0+-1f425f?style=for-the-badge&logo=dart)](https://dart.dev)
 
-
-</div>
-
 ---
 
-## Overview
-
-This project provides a production-ready implementation of Firebase Remote Config in Flutter, enabling dynamic control of application UI elements without requiring new app releases. Configuration [...]
+> This project provides a production-ready implementation of Firebase Remote Config in Flutter, enabling dynamic control of application UI elements without requiring new app releases. Configuration [...]
 
 **Primary Applications:**
 - A/B testing UI variations
