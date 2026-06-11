@@ -6,7 +6,7 @@
 
 ---
 
-> This project provides a production-ready implementation of Firebase Remote Config in Flutter, enabling dynamic control of application UI elements without requiring new app releases. Configuration [...]
+> This project provides a production-ready implementation of Firebase Remote Config in Flutter, enabling dynamic control of application UI elements without requiring new app releases.
 
 **Primary Applications:**
 - A/B testing UI variations
